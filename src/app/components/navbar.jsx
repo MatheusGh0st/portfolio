@@ -8,6 +8,7 @@ const links = [
   { url: '/', title: "Home" },
   { url: '/about', title: "About" },
   { url: '/portfolio', title: "Portfolio" },
+  { url: 'articles', title: "Title" },
   { url: '/contact', title: "Contact" },
 ];
 
