@@ -1,14 +1,15 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import NavLink from "../components/navLink.jsx";
 import { useState } from "react";
 
 const links = [
   { url: '/', title: "Home" },
   { url: '/about', title: "About" },
   { url: '/portfolio', title: "Portfolio" },
-  { url: 'articles', title: "Title" },
+  { url: '/articles', title: "Articles" },
   { url: '/contact', title: "Contact" },
 ];
 
@@ -19,11 +20,11 @@ const Navbar = () => {
       {/* LINKS */}
       <div className='hidden md:flex gap-4'>
         {links.map(link=>(
-          <Link href={link.url} key={link.title}>{link.title}</Link>
+          <NavLink link={link} key={link.title} />
         ))}
       </div>
       { /* LOGO */ }
-      <div className='md:hidden lg:flex'>
+      <div className='md:hidden lg:flex xl:justify-center'>
         <Link 
           href="/"
           className='text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center'>
