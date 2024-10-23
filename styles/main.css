@@ -4,7 +4,7 @@
 @import "./_fonts.css";
 
 body {
-  @apply font-sans bg-white;
+  @apply font-mono bg-white;
 }
 
 @tailwind utilities;

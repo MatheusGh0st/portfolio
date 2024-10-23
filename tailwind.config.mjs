@@ -32,5 +32,9 @@ export default {
   variants: {
     width: ['responsive']
   },
+  container: {
+    padding: "2rem",
+    center: true,
+  },
   plugins: []
 }
